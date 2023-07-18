@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form >
+        <table  cellspacing="4" cellpadding="4">
+            
+            <tr>
+                <th colspan="4" align="center">Registration Form</th>
+            </tr>
+            
+            <tr><td></td></tr>
+            
+            <tr>
+                <td align="right">Name:</td>
+                    <td><input type="text" required="" pattern="[a-zA-Z]{2,5}" title="mini 2 and maximan 5 lettters only " name="name">
+                </td>
+            </tr>
+    <!-- nirav-patel@tops-int123.com -->
+
+            <tr>
+                <td align="right">Email:</td>
+                <td><input type="email" required  name="email"></td>
+            </tr>
+
+            <tr>
+                <td align="right">Date:</td>
+                <td><input type="date" required  name="date"></td>
+            </tr>
+
+     
+            <tr>
+                <td align="right">password:</td>
+                <td><input type="password" required name="password"></td>
+            </tr> 
+            
+            <tr>
+                <td align="right">Mobile:</td>
+                <td><input type="taxt" required pattern="[0-9]{10}" title="10 digit only" name="Mobile"></td>
+            </tr>
+
+            <tr> 
+                <td align="right">address:</td>
+                <td><textarea rows="5" cols="50" name="address"></textarea></td>
+            </tr>
+            
+            <tr>
+                <td align="right">Gender:</td>
+                <td>
+                    <input type="radio" name="Gender" name="Gender">Male
+                    <input type="radio" name="Gender">Female
+                    <input type="radio" name="Gender">Other
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">Favourite colur:</td>
+                <td><input type="color"></td>
+            </tr>
+
+            <tr>
+                <td align="right">country:</td>
+                <td>
+                    <select>
+                        <option value="" hidden="select yout country"></option>
+                        <option value="" selected>India</option>
+                        <option value="">USA</option>
+                        <option value="">UK</option>
+                        <option value="" disabled>Pakistan</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit"> <input type="reset">
+                </td> 
+            </tr>
+        
+        </table>
+    </form>
+
+</body>
+</html>
