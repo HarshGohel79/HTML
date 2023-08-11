@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+        body
+        {
+            background: url(task9.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1
+        {
+            padding-top: 75px ;
+            background: white;
+        }
+
+        .k
+        {
+            width: 100%;
+            height: 800px;
+            background: white
+        }
+        .d
+        {   height: 400px;
+            width: 100%;
+            display: flex;
+        }
+        .d1
+        {
+            height: 400px;
+            width: 50%;
+            background: url(task5.jpg);
+            background-repeat:no-repeat ;
+            background-size: cover;
+            
+        }
+        .d2
+        {   
+            height: 400px;
+            width: 50%;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+
+        }
+        .a
+        {
+            width: 400px;
+            height: 690px;
+            background: url(task1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: -50px,0;
+            transform: translate(70px,70px);
+            border: 9px solid rgba(234,230,234,0.3);
+            background-origin: border-box;
+            transition: 1s;
+        }
+        .b
+        {
+            width: 55%;
+            height: 340px;
+            background: url(task2.jpg);
+            transform: translate(520px,-619px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-position: -50px,0px;
+            background-size: cover;
+            border: 9px solid rgba(234,230,234,0.3);
+            background-origin: border-box;
+            transition: 1s;    
+        }
+        .c
+        {
+
+            width: 55%;
+            height: 320px;
+            background: url(task3.jpg);
+            transform: translate(520px,-590px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-position: -50px,0px;
+            background-size: 120%;
+            border: 9px solid rgba(234,230,234,0.3);
+            background-origin: border-box; 
+            transition: 1s;
+        }
+        .a1
+        {
+            width: 320px;
+            height: 600px;
+            color: white;
+            border: 3px solid white;
+            font-size: 20px;
+            padding: 100px 0 0 150px ;
+            word-spacing: 3px;
+            letter-spacing: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            opacity: 0;
+            transition: .5s;          
+            margin-left: -50px 
+        }
+        .b1
+        {
+            width: 630px;
+            height: 200px;
+            background: transparent;
+            color: white;
+            border: 3px solid white;
+            padding: 140px 0 0 400px;
+            font-size: 20px;
+            word-spacing: 3px;
+            letter-spacing: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           opacity: 0;
+           transition: .5s;
+           margin-left: -50px;
+        }
+        .c1
+        {
+            width: 630px;
+            height: 200px;
+            background: transparent;
+            display: flex;
+            color: white;
+            border: 3px solid white;
+            padding: 140px   0 0 400px ;
+            font-size: 20px;
+            word-spacing: 3px;
+            letter-spacing: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            opacity: 0;
+            transition: .5s;           
+            margin-left: -50px;
+            
+        }
+        .a:hover, .b:hover, .c:hover
+        {
+            background-position: 0;
+        } 
+
+        .a:hover .a1,.b:hover .b1,.c:hover .c1
+        {
+            opacity: 1;
+            margin-left: 0px;
+        }
+        .l
+        {
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            background: white;
+            text-shadow: 0px 0px 10px  black;
+            
+
+        }
+        .l1
+        {
+            font-weight:bolder;
+            
+        }
+        .r
+        {
+            width: 100%;
+            height: 400px;
+            background: transparent;
+            color: white;
+            font-size: 50px;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            text-align: center;
+            padding: 100px;
+            text-shadow: 0 0 9px black;
+
+        
+        }
+        .v
+        {
+            width: 100%;
+            height: 400px;
+            background-color: black;
+        }
+        .x
+        {
+            width: 100%;
+            height: 400px;
+            background:white;
+            display: flex;
+            
+        }
+        .x1
+        {
+            width: 400px;
+            height: 250px;
+            background: url(task7.jpg);
+            background-repeat: no-repeat;
+            background-size: 120%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: -50px,0;
+            transform: translate(70px,70px);
+            border: 9px solid rgba(234,230,234,0.3);
+            background-origin: border-box;
+            transition: 1s;
+            margin-left: 200px
+        }
+        .x2
+        {
+            height: 170px;
+            width: 320px;
+            color: white; 
+            border: 3px solid white;
+            font-size: 20px;
+            padding: 100px 0 0 150px ;
+            word-spacing: 3px;
+            letter-spacing: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            opacity: 0;
+            transition: .5s;
+            margin-top: -50px;
+        }
+        .x1:hover
+        {
+            background-position: 0;
+        } 
+
+        .x1:hover .x2
+        {
+            opacity: 1;
+            margin-top: 0px;
+        }
+        .f1
+        {
+            width: 400px;
+            height: 250px;
+            background: url(task8.jpg);
+            background-repeat: no-repeat;
+            background-size: 120%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: -50px,0;
+            transform: translate(70px,70px);
+            border: 9px solid rgba(234,230,234,0.3);
+            background-origin: border-box;
+            transition: 1s;
+            margin-left: 20px;
+        }
+        .f2
+        {
+            height: 170px;
+            width: 320px;
+            color: white; 
+            border: 3px solid white;
+            font-size: 20px;
+            padding: 100px 0 0 150px ;
+            word-spacing: 3px;
+            letter-spacing: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            opacity: 0;
+            transition: .5s;         
+            margin-bottom: -50px;   
+        }
+        .f1:hover
+        {
+            background-position: 0;
+        } 
+
+        .f1:hover .f2
+        {
+            opacity: 1;
+            margin-bottom: 0px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="x">
+        <div class="x1">
+            <div class="x2">New Arrivals
+
+            </div>
+        </div>
+
+        <div class="f1">
+            <div class="f2">New Arrivals
+
+            </div>
+        </div>
+    </div>
+
+
+
+    
+   <div class="d">
+    <div class="d1"></div>
+    <div class="d2">  <img src="task6.jpeg" alt="">
+
+    </div>
+   </div>
+        
+    
+
+    <h1 class="l">
+         <span class="l1">WHAT's </span>
+         <span>TRENDING</span>
+    </h1>
+
+<div class="k">
+
+    <div class="a"> 
+          <div class="a1"> UPTO 55%</div>
+    </div>
+    <div class="b">
+         <div class="b1">UPTO 55%</div>
+    </div>
+    <div class="c">
+        <div class="c1">UPTO 65%    </div>
+            
+    </div>
+    
+</div>
+<div class="r">We Offer Flat 40% Discount</div>
+
+</body>
+</html>

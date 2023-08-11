@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background: green;
+        }
+        .a
+        {
+            width: 206px;
+            height: 406px;
+            background-color: black;
+            z-index: 1;
+            position: relative;
+            margin: 100px auto;
+            padding: 5px 0px 0px 5px   ;
+            overflow: hidden;
+            
+        }
+        .a1
+        {
+            height: 400px;
+            width: 200px;
+            background: black;
+            z-index: 2;
+            position: absolute;
+        }
+        .a2
+        {
+            height: 900px;
+            width:  900px;
+            background: linear-gradient(red,pink,black,blue,orange,green);
+            transform: rotate(-500deg);
+            transition: 1s;
+            position: absolute;
+            top: -200px;
+            right: -300px;
+            z-index: 0;
+
+
+
+        }
+        .a:hover .a2
+        {
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+         <div class="a1"> </div>
+         <div class="a2"></div>
+    </div>
+</body>
+</html>

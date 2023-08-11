@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background: black;
+        }
+        .main
+        {
+            height: 80px;
+            width: 170px;
+            background: yellow;
+            color: red;
+            margin: 100px auto;
+            position: relative;
+            text-align: center;
+            align-items: center;
+            padding-left: 60px;
+            display: flex;
+            z-index: 1;
+            box-sizing: border-box;
+            overflow: hidden;
+            box-shadow: black;
+            
+             
+       
+            
+        }
+        .h1
+        {
+            height: 10px;
+            width: 170px;
+            background: pink;
+            position: absolute;
+            z-index: -1;
+            transition: 1s;
+            top: 90%;
+            right: 100%;
+
+
+           
+    
+
+        }
+        .main:hover .h1
+        {        
+            
+            right: 0; 
+            /* top: 0%; */
+             
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="main">HOME
+        <div class="h1"></div>
+
+    </div>
+</body>
+</html>
