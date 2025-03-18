@@ -1,0 +1,19 @@
+SDLC: Software development life cycle
+	
+software/app/website
+
+	1. requirement
+	2. analysis
+	3. designing ===> GD/ WD
+
+HTML/5,CSS/3,JavaScript,jQuery,Bootstrap ==> psd to HTML
+	
+	static
+
+	4.development (dynamic)
+	
+	BE:php,python,java,.net
+	FE:react js, angular js
+
+	5. testing
+	6. maintainance

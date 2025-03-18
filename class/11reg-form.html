@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- nirav-patel@tops-int123.com -->
+
+   <!-- methods:
+   1. get  (default) 
+   ==> shows data in URL 
+   ==> its not secure
+   ==> limited data
+   2. post
+   ==> it doesnt show data in url
+   ==> itssecure
+   ==> unlimited data 
+
+
+   
+
+   
+
+-->
+   
+
+    <form method="post" action="x.html">
+        <table cellspacing="4" cellpadding="4">
+
+            <tr>
+                <th colspan="2">Registration Form</th>
+            </tr>
+    
+            <tr>
+                <td align="right">Name:</td>
+                <td>
+                    <!-- <input type="text" required="" pattern="[a-zA-Z]+" title="Letters only...!"> -->
+
+                    <input value="" type="text"  pattern="[a-zA-Z]{2,5}"  name="nm">
+                </td>
+            </tr>
+    
+            <tr>
+                <td  align="right">Email:</td>
+                <td><input type="email"></td>
+            </tr>
+
+            <tr>
+                <td  align="right">Password:</td>
+                <td><input type="password" name="pwd"></td>
+            </tr>
+    
+            <tr>
+                <td  align="right">Mobile:</td>
+                <td>
+                    <!-- <input type="text" required pattern="[0-9]+" title="numbers only "> -->
+
+                    <input type="text" required pattern="[0-9]{10}" title="10 digits only ">
+                </td>
+            </tr>
+    
+    
+            <tr>
+              
+                <!-- <td colspan="2" align="center">
+                    <input type="submit" value="Sign Up">
+                </td> -->
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

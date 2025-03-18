@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        
+        INPUT 
+
+        => TYPE 
+        => REQUIRED 
+        => PATTERN
+        => TITLE 
+        => NAME
+        => VALUE
+        
+        ==> ATTRIBUTES OF OPTION TAG
+    HIDDEN
+    SELECTED
+    DISABLE  -->
+
+    <form>
+
+          Name: <input type="text" required pattern="[a-zA-Z]"(1-7) title="min 2 and maximan 7 letter to use/"><br><br>
+    Email:<input type="email"><br><br> 
+    Password:<input type="password"><br><br>
+    Mobile:<input type="text"><br><br>
+    Quantity:<input type="number"><br><br>
+    Date:<input type="date"><br><br>
+    DOB: <input type="datetime-local"><br><br>
+    
+    <select>
+        <option hidden>--- Select your Country---</option>
+        <!-- <option value="" selected>India</option> -->
+        <option value="">USA</option>
+        <option value="" disabled>UAE</option>
+        <option value="">Australia</option>
+    
+    </select>
+
+    <textarea rows="10" cols="50"></textarea>
+
+    <br><br>
+    
+    Color:<input type="color"><br><br>
+    Range:<input type="range"><br><br>
+    Gender: 
+    <input type="radio" name="gender">Male
+    <input type="radio" nAme="gender">Female 
+
+    <br><br>
+
+    Languages: 
+    <input type="checkbox">Gujarati
+    <input type="checkbox">Hindi 
+    <input type="checkbox">Marathi 
+    <input type="checkbox">Thullu 
+
+    <br><br>
+
+
+    <input type="submit">
+    <input type="reset">
+
+
+    </form>
+  
+   
+
+    
+</body>
+</html>
